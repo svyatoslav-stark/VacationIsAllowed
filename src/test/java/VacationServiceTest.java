@@ -6,7 +6,7 @@ import ru.netology.services.VacationService;
 public class VacationServiceTest {
 
     @ParameterizedTest
-    @CsvFileSource(files="src/test/resources/Vacation.csv")
+    @CsvFileSource(files = "src/test/resources/Vacation.csv")
     public void testVacationMonthsVacation(int expected, int income, int expenses, int threshold) {
         VacationService service = new VacationService();
 
